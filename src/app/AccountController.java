@@ -17,7 +17,7 @@ import java.util.Arrays;
 import java.util.ResourceBundle;
 import java.util.function.UnaryOperator;
 
-class AccountController implements Initializable {
+public class AccountController implements Initializable {
 
     @FXML
     private ChoiceBox choiceBox;
