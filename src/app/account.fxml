@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+
+<VBox prefWidth="300.0" spacing="5.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.AccountController">
+   <children>
+      <Label text="Choose account" textAlignment="CENTER" />
+      <ChoiceBox fx:id="choiceBox" maxWidth="1.7976931348623157E308" prefWidth="150.0" />
+      <Button alignment="CENTER" mnemonicParsing="false" onAction="#chooseAccount" text="Choose" textAlignment="CENTER" />
+      <Line endX="150.0" startX="-100.0" />
+      <Label text="Create new account">
+         <VBox.margin>
+            <Insets top="10.0" />
+         </VBox.margin></Label>
+      <TextField fx:id="accountNumText" promptText="Account number" />
+      <PasswordField fx:id="passwordText" promptText="Password" />
+      <TextField fx:id="balanceText" promptText="Initial balance" />
+      <Button mnemonicParsing="false" onAction="#newAccount" text="New Account" />
+   </children>
+   <opaqueInsets>
+      <Insets />
+   </opaqueInsets>
+   <padding>
+      <Insets bottom="24.0" left="24.0" right="24.0" top="24.0" />
+   </padding>
+</VBox>
